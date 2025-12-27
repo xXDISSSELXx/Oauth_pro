@@ -1,7 +1,7 @@
 server:
   # Esto es vital: Le dice a Spring "Usa el puerto de Railway, o el 8080 si estás en local"
   port: ${PORT:8080}
-  forward-headers-strategy: native # Esto le dice a Spring que confíe en el HTTPS de Railway
+  forward-headers-strategy: ${SERVER_FORWARD_HEADERS_STRATEGY:native}
 
 spring:
   datasource:
