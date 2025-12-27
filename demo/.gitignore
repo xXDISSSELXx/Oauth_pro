@@ -33,6 +33,4 @@ build/
 .vscode/
 
 .env
-target/
-*.class
-.idea/
+
