@@ -1,3 +1,7 @@
+server:
+  # Esto es vital: Le dice a Spring "Usa el puerto de Railway, o el 8080 si estás en local"
+  port: ${PORT:8080}
+
 spring:
   datasource:
     # URL corregida con formato JDBC y el puerto del Pooler (6543)
