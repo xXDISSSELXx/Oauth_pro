@@ -1,19 +1,16 @@
 server:
-  # Esto es vital: Le dice a Spring "Usa el puerto de Railway, o el 8080 si estás en local"
   port: ${PORT:8080}
   forward-headers-strategy: native
 
 spring:
   datasource:
-    # URL corregida con formato JDBC y el puerto del Pooler (6543)
-      url: ${DB_URL}
-      username: ${DB_USERNAME}
-      password: ${DB_PASSWORD}
-      driver-class-name: org.postgresql.Driver
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
 
   jpa:
     hibernate:
-      # Esto crea las tablas automáticamente basándose en tus entidades @Entity
       ddl-auto: update
     properties:
       hibernate:
