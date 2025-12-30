@@ -24,8 +24,5 @@ public class SecurityConfig {
 
         return http.build();
     }
-    @Bean
-    public ForwardedHeaderFilter forwardedHeaderFilter() {
-        return new ForwardedHeaderFilter();
-    }
+
 }
